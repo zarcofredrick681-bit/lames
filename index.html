@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Segurança</title>
+    <style>
+        /* Estilos Globais */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Container Principal */
+        .main-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .icon-shield {
+            width: 50px;
+            height: 50px;
+            border: 3px solid #ffd700;
+            border-radius: 10px 10px 50% 50%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        p {
+            color: #666;
+            max-width: 400px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* Barra de Progresso */
+        .progress-container {
+            width: 100%;
+            max-width: 400px;
+            height: 12px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            width: 100%; 
+            height: 100%;
+            background-color: #ffd700;
+            animation: loading 2.5s ease-in-out forwards;
+        }
+
+        .status-text {
+            color: #28a745;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        /* Botão */
+        .btn-access {
+            background-color: #ffde00;
+            color: #000;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(255, 222, 0, 0.4);
+            transition: transform 0.2s, background-color 0.2s;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .btn-access:hover {
+            background-color: #f7d500;
+            transform: translateY(-2px);
+        }
+
+        /* Rodapé */
+        footer {
+            padding: 40px 20px;
+            font-size: 11px;
+            color: #999;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: #999;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Animação */
+        @keyframes loading {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="icon-shield"></div>
+
+        <h1>Verificação de Segurança</h1>
+        <p>Estamos validando seu acesso para garantir uma conexão segura. Por favor, aguarde o carregamento completo.</p>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="status-text">Acesso Liberado</div>
+
+        <a href="https://colsultor-dodia-2026.netlify.app/" class="btn-access">Acessar Página Oficial</a>
+    </div>
+
+    <footer>
+        <strong>Wma & Barbosa Contabilidade e Inteligencia Tributaria LTDA</strong><br>
+        CNPJ: 65.082.140/0001-00<br>
+        Copyright © 2026 - Todos os direitos reservados.
+        
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a> | 
+            <a href="#">Termos de Uso</a> | 
+            <a href="#">Contato</a>
+        </div>
+        <div style="margin-top: 15px;">
+            Este site não é afiliado ao Facebook ou Google. Todas as marcas registradas são propriedade de seus respectivos donos.
+        </div>
+    </footer>
+
+</body>
+</html>
